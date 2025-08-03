@@ -1,0 +1,13 @@
+export const WINNING_COMBINATIONS = [
+    [0,1,2], [3,4,5], [6,7,8], // горизонтали
+    [0,3,6], [1,4,7], [2,5,8], // вертикали
+    [0,4,8], [2,4,6]           // диагонали
+]
+
+const DEFAULT_GAME_STATE = [
+    null, null, null,
+    null, null, null,
+    null, null, null,
+]
+
+export const getDefaultGameState = () => [...DEFAULT_GAME_STATE]
